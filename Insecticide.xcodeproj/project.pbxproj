@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		C7D572832B5410AB000F0F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572822B5410AB000F0F2B /* AppDelegate.swift */; };
 		C7D572852B5410AB000F0F2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572842B5410AB000F0F2B /* SceneDelegate.swift */; };
-		C7D572872B5410AB000F0F2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572862B5410AB000F0F2B /* ViewController.swift */; };
-		C7D5728A2B5410AB000F0F2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D572882B5410AB000F0F2B /* Main.storyboard */; };
+		C7D572872B5410AB000F0F2B /* InsecticideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572862B5410AB000F0F2B /* InsecticideViewController.swift */; };
 		C7D5728C2B5410AC000F0F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D5728B2B5410AC000F0F2B /* Assets.xcassets */; };
 		C7D5728F2B5410AC000F0F2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D5728D2B5410AC000F0F2B /* LaunchScreen.storyboard */; };
+		C7D5729B2B54121E000F0F2B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5729A2B54121E000F0F2B /* NetworkManager.swift */; };
+		C7D5729D2B541234000F0F2B /* InsecticideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5729C2B541234000F0F2B /* InsecticideViewModel.swift */; };
+		C7D5729F2B541246000F0F2B /* InsecticideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5729E2B541246000F0F2B /* InsecticideModel.swift */; };
+		C7D572A22B5415E9000F0F2B /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572A12B5415E9000F0F2B /* APIErrors.swift */; };
+		C7D572A42B541759000F0F2B /* APIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572A32B541759000F0F2B /* APIComponents.swift */; };
+		C7D572A82B5442DF000F0F2B /* InsecticideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572A72B5442DF000F0F2B /* InsecticideCollectionViewCell.swift */; };
+		C7D572AD2B544502000F0F2B /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7D572AA2B54449C000F0F2B /* SF-Pro-Display-Medium.otf */; };
+		C7D572AE2B544502000F0F2B /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7D572A92B54449C000F0F2B /* SF-Pro-Display-Regular.otf */; };
+		C7D572AF2B544502000F0F2B /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7D572AB2B54449C000F0F2B /* SF-Pro-Display-Semibold.otf */; };
+		C7D572B22B544542000F0F2B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572B12B544542000F0F2B /* Constants.swift */; };
+		C7D572B42B547631000F0F2B /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572B32B547631000F0F2B /* Extension + UILabel.swift */; };
+		C7D572B72B547E3A000F0F2B /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572B62B547E3A000F0F2B /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7D5727F2B5410AB000F0F2B /* Insecticide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insecticide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D572822B5410AB000F0F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D572842B5410AB000F0F2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7D572862B5410AB000F0F2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7D572892B5410AB000F0F2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7D572862B5410AB000F0F2B /* InsecticideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsecticideViewController.swift; sourceTree = "<group>"; };
 		C7D5728B2B5410AC000F0F2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D5728E2B5410AC000F0F2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7D572902B5410AC000F0F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D5729A2B54121E000F0F2B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C7D5729C2B541234000F0F2B /* InsecticideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsecticideViewModel.swift; sourceTree = "<group>"; };
+		C7D5729E2B541246000F0F2B /* InsecticideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsecticideModel.swift; sourceTree = "<group>"; };
+		C7D572A12B5415E9000F0F2B /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
+		C7D572A32B541759000F0F2B /* APIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIComponents.swift; sourceTree = "<group>"; };
+		C7D572A72B5442DF000F0F2B /* InsecticideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsecticideCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7D572A92B54449C000F0F2B /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		C7D572AA2B54449C000F0F2B /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		C7D572AB2B54449C000F0F2B /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		C7D572B12B544542000F0F2B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7D572B32B547631000F0F2B /* Extension + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UILabel.swift"; sourceTree = "<group>"; };
+		C7D572B62B547E3A000F0F2B /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,106 @@
 		C7D572812B5410AB000F0F2B /* Insecticide */ = {
 			isa = PBXGroup;
 			children = (
+				C7D572992B541210000F0F2B /* Services */,
+				C7D572962B5411BE000F0F2B /* Models */,
+				C7D572982B5411DD000F0F2B /* Views */,
+				C7D572972B5411D2000F0F2B /* ViewModels */,
+				C7D572B02B544532000F0F2B /* Helpers */,
 				C7D572822B5410AB000F0F2B /* AppDelegate.swift */,
 				C7D572842B5410AB000F0F2B /* SceneDelegate.swift */,
-				C7D572862B5410AB000F0F2B /* ViewController.swift */,
-				C7D572882B5410AB000F0F2B /* Main.storyboard */,
 				C7D5728B2B5410AC000F0F2B /* Assets.xcassets */,
 				C7D5728D2B5410AC000F0F2B /* LaunchScreen.storyboard */,
 				C7D572902B5410AC000F0F2B /* Info.plist */,
 			);
 			path = Insecticide;
+			sourceTree = "<group>";
+		};
+		C7D572962B5411BE000F0F2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7D5729E2B541246000F0F2B /* InsecticideModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7D572972B5411D2000F0F2B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C7D572A62B54417F000F0F2B /* InsecticideViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C7D572982B5411DD000F0F2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7D572A52B543D15000F0F2B /* InsecticideViewController */,
+				C7D572B52B547E0B000F0F2B /* ItemViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7D572992B541210000F0F2B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7D5729A2B54121E000F0F2B /* NetworkManager.swift */,
+				C7D572A02B5415D8000F0F2B /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C7D572A02B5415D8000F0F2B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C7D572A12B5415E9000F0F2B /* APIErrors.swift */,
+				C7D572A32B541759000F0F2B /* APIComponents.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C7D572A52B543D15000F0F2B /* InsecticideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7D572862B5410AB000F0F2B /* InsecticideViewController.swift */,
+				C7D572A72B5442DF000F0F2B /* InsecticideCollectionViewCell.swift */,
+			);
+			path = InsecticideViewController;
+			sourceTree = "<group>";
+		};
+		C7D572A62B54417F000F0F2B /* InsecticideViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7D5729C2B541234000F0F2B /* InsecticideViewModel.swift */,
+			);
+			path = InsecticideViewModel;
+			sourceTree = "<group>";
+		};
+		C7D572AC2B5444A1000F0F2B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C7D572AA2B54449C000F0F2B /* SF-Pro-Display-Medium.otf */,
+				C7D572A92B54449C000F0F2B /* SF-Pro-Display-Regular.otf */,
+				C7D572AB2B54449C000F0F2B /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C7D572B02B544532000F0F2B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7D572AC2B5444A1000F0F2B /* Assets */,
+				C7D572B12B544542000F0F2B /* Constants.swift */,
+				C7D572B32B547631000F0F2B /* Extension + UILabel.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C7D572B52B547E0B000F0F2B /* ItemViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7D572B62B547E3A000F0F2B /* ItemViewController.swift */,
+			);
+			path = ItemViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D572AD2B544502000F0F2B /* SF-Pro-Display-Medium.otf in Resources */,
+				C7D572AE2B544502000F0F2B /* SF-Pro-Display-Regular.otf in Resources */,
+				C7D572AF2B544502000F0F2B /* SF-Pro-Display-Semibold.otf in Resources */,
 				C7D5728F2B5410AC000F0F2B /* LaunchScreen.storyboard in Resources */,
 				C7D5728C2B5410AC000F0F2B /* Assets.xcassets in Resources */,
-				C7D5728A2B5410AB000F0F2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +253,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D572872B5410AB000F0F2B /* ViewController.swift in Sources */,
+				C7D572A42B541759000F0F2B /* APIComponents.swift in Sources */,
+				C7D5729B2B54121E000F0F2B /* NetworkManager.swift in Sources */,
+				C7D572A22B5415E9000F0F2B /* APIErrors.swift in Sources */,
+				C7D572872B5410AB000F0F2B /* InsecticideViewController.swift in Sources */,
+				C7D5729F2B541246000F0F2B /* InsecticideModel.swift in Sources */,
+				C7D572B72B547E3A000F0F2B /* ItemViewController.swift in Sources */,
+				C7D572B22B544542000F0F2B /* Constants.swift in Sources */,
+				C7D5729D2B541234000F0F2B /* InsecticideViewModel.swift in Sources */,
 				C7D572832B5410AB000F0F2B /* AppDelegate.swift in Sources */,
 				C7D572852B5410AB000F0F2B /* SceneDelegate.swift in Sources */,
+				C7D572A82B5442DF000F0F2B /* InsecticideCollectionViewCell.swift in Sources */,
+				C7D572B42B547631000F0F2B /* Extension + UILabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C7D572882B5410AB000F0F2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7D572892B5410AB000F0F2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7D5728D2B5410AC000F0F2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +413,9 @@
 				INFOPLIST_FILE = Insecticide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +423,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = IlyaPavl.Insecticide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +445,9 @@
 				INFOPLIST_FILE = Insecticide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +455,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = IlyaPavl.Insecticide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
