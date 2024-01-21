@@ -8,7 +8,6 @@
 import Foundation
 
 struct APIComponents {
-
     static let shared = APIComponents()
     
     let base: URLComponents = {

@@ -24,21 +24,19 @@ class InsecticideCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        
         super.layoutSubviews()
         imageView.frame = CGRect(x: (self.frame.width - Constants.objectsWidth) / 2, y: Constants.sidePadding, width: Constants.objectsWidth, height: 82)
         
         let remedyNameSize = remedyName.sizeThatFits(CGSize(width: Constants.objectsWidth, height: CGFloat.greatestFiniteMagnitude))
-        remedyName.frame = CGRect(x: (self.frame.width - Constants.objectsWidth) / 2, y: imageView.frame.maxY + Constants.littlePadding, width: remedyNameSize.width, height: remedyNameSize.height)
-        
-
+        remedyName.frame = CGRect(x: (self.frame.width - Constants.objectsWidth) / 2, y: imageView.frame.maxY + Constants.littlePadding, 
+                                  width: remedyNameSize.width, height: remedyNameSize.height)
 
         let remedyDescriptionSize = remedyDescription.sizeThatFits(CGSize(width: Constants.objectsWidth, height: CGFloat.greatestFiniteMagnitude))
-        remedyDescription.frame = CGRect(x: (self.frame.width - Constants.objectsWidth) / 2, y: remedyName.frame.maxY + Constants.littlePadding, width: remedyDescriptionSize.width, height: remedyDescriptionSize.height)
+        remedyDescription.frame = CGRect(x: (self.frame.width - Constants.objectsWidth) / 2, y: remedyName.frame.maxY + Constants.littlePadding, 
+                                         width: remedyDescriptionSize.width, height: remedyDescriptionSize.height)
     }
     
     func setupCellWith(name: String, description: String) {
-
         self.remedyName.text = name
         self.remedyDescription.text = description
         remedyDescription.setLineSpacing(lineSpacing: 1.19)
@@ -46,12 +44,10 @@ class InsecticideCollectionViewCell: UICollectionViewCell {
     }
     
     func setupCellWith(image: UIImage) {
-
         self.imageView.image = image
     }
 
     private func setupCellViews() {
-
         self.layer.cornerRadius = Constants.commonCornerRadius
         self.backgroundColor = .white
         self.layer.shadowColor = Constants.shadowColor

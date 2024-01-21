@@ -11,10 +11,8 @@ final class InsecticideViewController: UIViewController {
     
     private var collectionView: UICollectionView!
     private let searchBar = UISearchBar()
-    
     private let itemsPerRow: CGFloat = 2
     private let sectionInsets = UIEdgeInsets(top: Constants.sideInsets, left: Constants.sideInsets, bottom: Constants.sideInsets, right: Constants.sideInsets)
-    
     private var viewModel = InsecticideViewModel()
     
     override func viewDidLoad() {
@@ -23,13 +21,11 @@ final class InsecticideViewController: UIViewController {
         setupSearchBar()
         hideKeyboardOnTap()
         setupCollectionUI()
-        
-        viewModel.fetchCardsData()
+        viewModel.loadData()
         viewModel.delegate = self
     }
     
     private func setupNavBar() {
-        
         self.navigationItem.title = "Список"
         navigationItem.backButtonDisplayMode = .minimal
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchButtonTapped))
@@ -42,7 +38,7 @@ final class InsecticideViewController: UIViewController {
         searchBar.becomeFirstResponder()
         self.navigationItem.rightBarButtonItem = .none
     }
-
+    
     private func setupSearchBar() {
         searchBar.delegate = self
         searchBar.placeholder = "Поиск"
@@ -52,23 +48,17 @@ final class InsecticideViewController: UIViewController {
 //MARK: - InsecticideViewModelDelegate
 extension InsecticideViewController: InsecticideViewModelDelegate {
     func insecticideDataDidUpdate() {
-        // Perform the reload with animation
         UIView.transition(with: collectionView, duration: 0.1, options: .transitionCrossDissolve, animations: { self.collectionView.reloadData() })
     }
 }
 
-
 //MARK: - UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 extension InsecticideViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(viewModel.cardsModel.count)
-        
         return viewModel.cardsModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: InsecticideCollectionViewCell.reuseIdentifier, for: indexPath) as? InsecticideCollectionViewCell else {
             fatalError("Unable to dequeue InsecticideCollectionViewCell")
         }
@@ -82,7 +72,6 @@ extension InsecticideViewController: UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let paddingWidth = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = collectionView.frame.width - paddingWidth
         let widthPerItem = availableWidth / itemsPerRow
@@ -94,20 +83,18 @@ extension InsecticideViewController: UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let itemVC = ItemViewController()
+        let card = viewModel.cardsModel[indexPath.item]
+        let itemVC = ItemViewController(itemID: card.id)
         self.navigationController?.pushViewController(itemVC, animated: true)
     }
-    
 }
 
 //MARK: - UICollectionViewDelegate
 extension InsecticideViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
         let lastIndex = collectionView.numberOfItems(inSection: 0) - 1
-        if indexPath.item == lastIndex {
-            viewModel.fetchCardsData()
+        if indexPath.item == lastIndex && searchBar.searchTextField.text == "" {
+            viewModel.loadData()
         }
     }
 }
@@ -115,11 +102,10 @@ extension InsecticideViewController: UICollectionViewDelegate {
 //MARK: - setup UI
 extension InsecticideViewController {
     private func setupCollectionUI() {
-        
         self.view.backgroundColor = .white
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        collectionView = UICollectionView(frame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height - 100), collectionViewLayout: layout)
+        collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -135,7 +121,7 @@ extension InsecticideViewController: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel.searchCardsData(searchText: searchText)
+        viewModel.loadData(searchText: searchText)
     }
 }
 
@@ -153,5 +139,6 @@ extension InsecticideViewController{
             navigationItem.titleView = nil
             setupNavBar()
         }
+        searchBar.resignFirstResponder()
     }
 }

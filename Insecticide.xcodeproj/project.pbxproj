@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C76F368B2B5ADAE9000EF908 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F368A2B5ADAE9000EF908 /* ItemViewModel.swift */; };
+		C76F368F2B5C1FBE000EF908 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F368E2B5C1FBE000EF908 /* CustomButton.swift */; };
 		C7D572832B5410AB000F0F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572822B5410AB000F0F2B /* AppDelegate.swift */; };
 		C7D572852B5410AB000F0F2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572842B5410AB000F0F2B /* SceneDelegate.swift */; };
 		C7D572872B5410AB000F0F2B /* InsecticideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D572862B5410AB000F0F2B /* InsecticideViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C76F368A2B5ADAE9000EF908 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		C76F368E2B5C1FBE000EF908 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C7D5727F2B5410AB000F0F2B /* Insecticide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insecticide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D572822B5410AB000F0F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D572842B5410AB000F0F2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C76F36892B5ADAD4000EF908 /* ItemViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C76F368A2B5ADAE9000EF908 /* ItemViewModel.swift */,
+			);
+			path = ItemViewModel;
+			sourceTree = "<group>";
+		};
 		C7D572762B5410AB000F0F2B = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		C7D572972B5411D2000F0F2B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C76F36892B5ADAD4000EF908 /* ItemViewModel */,
 				C7D572A62B54417F000F0F2B /* InsecticideViewModel */,
 			);
 			path = ViewModels;
@@ -168,6 +181,7 @@
 				C7D572AC2B5444A1000F0F2B /* Assets */,
 				C7D572B12B544542000F0F2B /* Constants.swift */,
 				C7D572B32B547631000F0F2B /* Extension + UILabel.swift */,
+				C76F368E2B5C1FBE000EF908 /* CustomButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -253,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76F368B2B5ADAE9000EF908 /* ItemViewModel.swift in Sources */,
+				C76F368F2B5C1FBE000EF908 /* CustomButton.swift in Sources */,
 				C7D572A42B541759000F0F2B /* APIComponents.swift in Sources */,
 				C7D5729B2B54121E000F0F2B /* NetworkManager.swift in Sources */,
 				C7D572A22B5415E9000F0F2B /* APIErrors.swift in Sources */,

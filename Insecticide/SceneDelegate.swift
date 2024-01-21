@@ -31,7 +31,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navVC.navigationBar.standardAppearance = blurredAppearance
         navVC.navigationBar.scrollEdgeAppearance = blurredAppearance
 
-        
         window.rootViewController = navVC
         
         self.window = window

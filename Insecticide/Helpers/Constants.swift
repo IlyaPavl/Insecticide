@@ -14,6 +14,8 @@ struct Constants {
     static let RegularFont = "SFProDisplay-Regular"
     
     static let sidePadding: CGFloat = 12
+    static let sidePaddinPlus: CGFloat = 14
+    static let sidePaddingPlusPlus: CGFloat = 16
     static let littlePadding: CGFloat = 6
     static let objectsWidth: CGFloat = 140
     static let sideInsets: CGFloat = 16
@@ -22,5 +24,4 @@ struct Constants {
     static let commonCornerRadius: CGFloat = 8
     static let lightGreyTextColor = UIColor(red: 0.683, green: 0.691, blue: 0.712, alpha: 1)
     static let shadowColor = UIColor(red: 0.282, green: 0.298, blue: 0.298, alpha: 0.15).cgColor
-
 }
