@@ -9,3 +9,7 @@ iOS-приложение, предоставляющее информацию о
 * Поддерживается pagination
 
 ## Пример работы приложения
+
+
+https://github.com/IlyaPavl/Insecticide/assets/83919599/43ccb29b-41d2-4587-8bef-3c7af40ad0a5
+
